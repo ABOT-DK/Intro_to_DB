@@ -24,7 +24,7 @@ def main():
         # 4. Success message
         print("Database 'alx_book_store' created successfully!")
         
-    except Error as e:
+    except mysql.connector.Error as e:
         # Handle any errors (including connection failures)
         print(f"Error: {e}")
         
